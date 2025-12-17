@@ -1,0 +1,50 @@
+# 模糊测试项目配置示例
+# 将此文件放在待测项目根目录
+
+name: "example_project"
+language: "c"  # c, cpp, python
+
+# 源代码目录
+source_dirs:
+  - "src"
+  - "lib"
+
+# 头文件目录
+include_dirs:
+  - "include"
+
+# 构建命令
+build_command: "make"
+
+# 清理命令
+clean_command: "make clean"
+
+# 编译器选项
+compiler_flags:
+  - "-g"
+  - "-O1"
+  - "-fsanitize=fuzzer,address"
+
+# 链接库
+link_libraries:
+  - "pthread"
+
+# 初始语料目录
+corpus_dir: "corpus"
+
+# 字典文件
+dictionary: "dict.txt"
+
+# 排除的文件模式
+exclude_patterns:
+  - "*_test.c"
+  - "test_*.c"
+
+# 目标函数（可选，不指定则自动发现）
+target_functions: []
+
+# 超时设置（秒）
+timeout: 60
+
+# 最大迭代次数
+max_iterations: 1000
