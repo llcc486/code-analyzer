@@ -1,0 +1,30 @@
+# LLM & AI
+openai>=1.0.0
+anthropic>=0.18.0
+langchain>=0.1.0
+langchain-openai>=0.0.5
+
+# AST解析
+libclang>=16.0.0
+tree-sitter>=0.20.0
+tree-sitter-languages>=1.8.0
+
+# Web框架
+fastapi>=0.109.0
+uvicorn>=0.27.0
+python-multipart>=0.0.6
+
+# 工具库
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+aiofiles>=23.2.0
+httpx>=0.26.0
+
+# 代码分析
+pylint>=3.0.0
+radon>=6.0.0
+
+# 测试
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
